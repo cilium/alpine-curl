@@ -41,7 +41,7 @@ jobs:
           fi
 
       - name: Checkout Source Code
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
         with:
           ref: ${{ steps.tag.outputs.tag }}
 
