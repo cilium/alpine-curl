@@ -34,7 +34,7 @@ jobs:
           echo tag=${GITHUB_REF##*/} >> $GITHUB_OUTPUT
 
       - name: Checkout Source Code
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
 
       - name: Release Build ${{ matrix.name }}
         uses: docker/build-push-action@af5a7ed5ba88268d5278f7203fb52cd833f66d6e
