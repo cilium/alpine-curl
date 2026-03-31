@@ -3,7 +3,7 @@
 # Copyright 2021 Authors of Cilium
 # SPDX-License-Identifier: Apache-2.0
 
-FROM registry.k8s.io/pause:3.10.1.1@sha256:278fb9dbcca9518083ad1e11276933a2e96f23de604a3a08cc3c80002767d24c as pause
+FROM registry.k8s.io/pause:3.10.2@sha256:f548e0e8e3dc1896ca956272154dde3314e8cc4fde0a57577ee9fa1c63f5baf4 as pause
 
 # BUILDPLATFORM is an automatic platform ARG enabled by Docker BuildKit.
 # Represents the platform where the build is happening, do not mix with
