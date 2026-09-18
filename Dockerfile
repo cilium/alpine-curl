@@ -8,7 +8,7 @@ FROM registry.k8s.io/pause:3.10.2@sha256:f548e0e8e3dc1896ca956272154dde3314e8cc4
 # BUILDPLATFORM is an automatic platform ARG enabled by Docker BuildKit.
 # Represents the platform where the build is happening, do not mix with
 # TARGETARCH
-FROM docker.io/library/alpine:3.24.1@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
+FROM docker.io/library/alpine:3.24.2@sha256:31b6477333eb8257db9e5d7c3a7264fd0467928756f0bbcc27d35bea5d28cdbd
 COPY --from=pause /pause /usr/bin/pause
 RUN apk add --no-cache curl iputils bind-tools tcpdump iproute2
 ENTRYPOINT ["/usr/bin/curl"]
